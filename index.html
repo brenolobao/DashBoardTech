@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard TechNation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!--MENU LATERAL-->
+
+        <div class="sideMenu">
+            <button class="closeMenu" onclick="closeMenu()"><i class="material-icons">close</i></button>
+            <nav class="wrapper">
+                <a href="index.html" class="wrapper-item active"> <i class="material-icons">inbox</i>
+                    All Notes</a>
+                <a href="pages/account.html" class="wrapper-item"><i class="material-icons">account_circle</i>Account</a>
+                <a href="pages/settings.html" class="wrapper-item"><i class="material-icons">settings</i>Settings</a>
+                <a href="pages/about.html" class="wrapper-item"><i class="material-icons">info</i>About</a>
+            </nav>
+            <button class="logout"><i class="material-icons">exit_to_app</i>Logout</button>
+        </div>
+
+        <!--MENU NAV BAR-->
+
+        <nav class="menu">
+            <button class="openMenu" onclick="openMenu()">
+                <i class="material-icons">menu
+                </i>
+            </button>
+            <div class="searchBar">
+                <form id="searchForm">
+                    <input type="text" name="search" id="search" placeholder="search in all notes">
+                </form>
+                <button type="submit" form="searchForm"><i class="material-icons">search</i></button>
+                <button id="openForm" onclick="openFilter()"><i class="material-icons">tune</i></button>
+            </div>
+            <div class="perfil">
+                <div class="photo"></div>
+                <div class="header">
+                    <div class="name">Name</div>
+                    <div class="function">Function</div>
+                </div>
+            </div>
+        </nav>
+
+        <!--CONTEÚDO DA DASHBOARD-->
+
+        <div class="content">
+
+            <!--TITULO E FILTRO BÁSICO DA SESSÃO-->
+
+            <div class="sectionHeader">
+                <div class="sectionLabel">Notas</div>
+                <select name="" id="timeFilter">
+                    <option value="Today">Today</option>
+                    <option value="lastWeek">Last Week</option>
+                    <option value="lastMonth">Last Month</option>
+                    <option value="lastYear">Last Year</option>
+                </select>
+            </div>
+
+            <!--SESSÃO COM CARTÕES INFORMATIVOS-->
+
+            <div class="section notes">
+
+                <div class="cards">
+                    <div class="card" style="background-color: #9BB8CD;">
+                        <div class="cardLabel">Notas emitidas</div>
+                        <div class="cardValue">179</div>
+                        <button class="cardButton">See all +</button>
+                    </div>
+
+                    <div class="card" style="background-color: #82A0D8;">
+                        <div class="cardLabel">Sem cobrança</div>
+                        <div class="cardValue">52</div>
+                        <button class="cardButton">See all +</button>
+                    </div>
+
+                    <div class="card" style="background-color: #ADC4CE;">
+                        <div class="cardLabel">Notas vencidas</div>
+                        <div class="cardValue">25</div>
+                        <button class="cardButton">See all +</button>
+                    </div>
+
+                    <div class="card" style="background-color: #8EACCD;">
+                        <div class="cardLabel">A vencer</div>
+                        <div class="cardValue">37</div>
+                        <button class="cardButton">See all +</button>
+                    </div>
+
+                    <div class="card" style="background-color: #82A0D8;">
+                        <div class="cardLabel">Notas pagas</div>
+                        <div class="cardValue">75</div>
+                        <button class="cardButton">See all +</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--TITULO E FILTRO BÁSICO DA SESSÃO-->
+
+            <div class="sectionHeader">
+                <div class="sectionLabel">Gráficos</div>
+                <select name="" id="timeFilter">
+                    <option value="Today">Today</option>
+                    <option value="lastWeek">Last Week</option>
+                    <option value="lastMonth">Last Month</option>
+                    <option value="lastYear">Last Year</option>
+                </select>
+            </div>
+
+            <!--SESSÃO COM GRÁFICOS-->
+
+            <div class="section graphs">
+                <div class="graph-container">
+                    <div class="graph-title">Evolution Graphic</div>
+                    <div class="graph-wrapper">
+                        <div class="item i1"></div>
+                        <div class="item i2"></div>
+                        <div class="item i3"></div>
+                        <div class="item i4"></div>
+                        <div class="item i5"></div>
+                        <div class="item i6"></div>
+                        <div class="item i7"></div>
+                        <div class="item i8"></div>
+                        <div class="item i9"></div>
+                        <div class="item i10"></div>
+                        <div class="bars">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph-container">
+                    <div class="graph-title">Evolution Graphic</div>
+                    <div class="graph-wrapper">
+                        <div class="item i1"></div>
+                        <div class="item i2"></div>
+                        <div class="item i3"></div>
+                        <div class="item i4"></div>
+                        <div class="item i5"></div>
+                        <div class="item i6"></div>
+                        <div class="item i7"></div>
+                        <div class="item i8"></div>
+                        <div class="item i9"></div>
+                        <div class="item i10"></div>
+                        <div class="bars">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MENU COM TODOS OS FILTROS-->
+
+            <div o class="filter">
+                <div class="filterHeader">
+                    <button onclick="closeFilter()" class="closeForm"><i class="material-icons">close</i></button>
+                    <div class="label">Filtrar Pesquisa</div>
+                </div>
+
+                <form id="filterForm">
+                    <div class="formArea">
+                        <input type="text" placeholder="nome do pagador">
+                        <input type="text" placeholder="número da nota">
+                    </div>
+                    <div class="formArea">
+                        <label>Data de emissão da nota</label>
+                        <input type="date">
+                    </div>
+                    <div class="formArea">
+                        <label>Data da cobrança</label>
+                        <input type="date">
+                    </div>
+                    <div class="formArea">
+                        <label>Data do pagamento</label>
+                        <input type="date">
+                    </div>
+                    <div class="formArea">
+                        <input type="text" placeholder="valor da nota">
+                    </div>
+                    <div class="formArea">
+                        <label>Documento da nota fiscal</label>
+                        <input type="file" id="upload">
+                    </div>
+
+                    <div class="formArea">
+                        <label>Documento do boleto bancário</label>
+                        <input type="file" id="upload">
+                    </div>
+                    <div class="formArea status">
+                        <label>Status da nota</label>
+                        <div><input type="radio" name="status" value="emitida"><label>Emitida</label></div>
+                        <div><input type="radio" name="status" value="cobrança"><label>Cobrança realizada</label></div>
+                        <div><input type="radio" name="status" value="atraso"><label>Pagamento em Atraso</label></div>
+                        <div><input type="radio" name="status" value="realizado"><label>Pagamento realizado</label></div>
+                    </div>
+                    <div class="formArea">
+                        <label>Emissão da nota</label>
+                        <input type="month">
+                    </div>
+                    <div class="formArea">
+                        <label>Realização da cobrança</label>
+                        <input type="month">
+                    </div>
+                    <div class="formArea">
+                        <label>Pagamento Realizado</label>
+                        <input type="month">
+                    </div>
+                    <div class="formArea">
+                        <label>Status da nota</label>
+                        <input type="month">
+                    </div>
+                </form>
+                <button form="filterForm" type="submit" class="formButton">Aplicar Filtros</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
