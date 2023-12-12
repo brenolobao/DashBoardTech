@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard TechNation</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!--MENU LATERAL-->
+
+        <div class="sideMenu">
+            <button class="closeMenu" onclick="closeMenu()"><i class="material-icons">close</i></button>
+            <nav class="wrapper">
+                <a href="../index.html" class="wrapper-item active"> <i class="material-icons">inbox</i>
+                    All Notes</a>
+                <a href="#account" class="wrapper-item"><i class="material-icons">account_circle</i>Account</a>
+                <a href="#settings" class="wrapper-item"><i class="material-icons">settings</i>Settings</a>
+                <a href="#about" class="wrapper-item"><i class="material-icons">info</i>About</a>
+            </nav>
+        </div>
+
+        <!--MENU NAV BAR-->
+
+        <nav class="menu">
+            <button class="openMenu" onclick="openMenu()">
+                <i class="material-icons">menu
+                </i>
+            </button>
+            <div class="searchBar">
+                <form id="searchForm">
+                    <input type="text" name="search" id="search" placeholder="search in all notes">
+                </form>
+                <button type="submit" form="searchForm"><i class="material-icons">search</i></button>
+                <button id="openForm" onclick="openFilter()"><i class="material-icons">tune</i></button>
+            </div>
+            <div class="perfil">
+                <div class="photo"></div>
+                <div class="header">
+                    <div class="name">Name</div>
+                    <div class="function">Function</div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="pagesContent">
+            <i class="material-icons">error</i>
+            <h1>Nothing to see here yet</h1>
+            <a href="../index.html">Go back to main Page</a>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
