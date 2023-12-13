@@ -39,6 +39,6 @@ function random() {
     }
   }
 
-  random()
+  setInterval(random, 4000);
   
 

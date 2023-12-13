@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DashBoard TechNation</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 </head>
 
@@ -19,12 +21,13 @@
             <button class="closeMenu" onclick="closeMenu()"><i class="material-icons">close</i></button>
             <nav class="wrapper">
                 <a href="index.html" class="wrapper-item active"> <i class="material-icons">inbox</i>
-                    All Notes</a>
-                <a href="pages/account.html" class="wrapper-item"><i class="material-icons">account_circle</i>Account</a>
-                <a href="pages/settings.html" class="wrapper-item"><i class="material-icons">settings</i>Settings</a>
-                <a href="pages/about.html" class="wrapper-item"><i class="material-icons">info</i>About</a>
+                    Todas as Notas</a>
+                <a href="pages/account.html" class="wrapper-item"><i class="material-icons">account_circle</i>Conta</a>
+                <a href="pages/settings.html" class="wrapper-item"><i
+                        class="material-icons">settings</i>Configurações</a>
+                <a href="pages/about.html" class="wrapper-item"><i class="material-icons">info</i>Sobre</a>
             </nav>
-            <button class="logout"><i class="material-icons">exit_to_app</i>Logout</button>
+            <button class="logout"><i class="material-icons">exit_to_app</i>Sair</button>
         </div>
 
         <!--MENU NAV BAR-->
@@ -36,16 +39,16 @@
             </button>
             <div class="searchBar">
                 <form id="searchForm">
-                    <input type="text" name="search" id="search" placeholder="search in all notes">
+                    <input type="text" name="search" id="search" placeholder="Pesquisar em todas as notas">
                 </form>
                 <button type="submit" form="searchForm"><i class="material-icons">search</i></button>
                 <button id="openForm" onclick="openFilter()"><i class="material-icons">tune</i></button>
             </div>
             <div class="perfil">
-                <div class="photo"></div>
+                <div class="photo"><i class="material-icons">person</i></div>
                 <div class="header">
-                    <div class="name">Name</div>
-                    <div class="function">Function</div>
+                    <div class="name">Nome</div>
+                    <div class="function">Cargo</div>
                 </div>
             </div>
         </nav>
@@ -57,12 +60,12 @@
             <!--TITULO E FILTRO BÁSICO DA SESSÃO-->
 
             <div class="sectionHeader">
-                <div class="sectionLabel">Notas</div>
+                <div class="sectionLabel"><i class="material-icons">note</i>Notas</div>
                 <select name="" id="timeFilter">
-                    <option value="Today">Today</option>
-                    <option value="lastWeek">Last Week</option>
-                    <option value="lastMonth">Last Month</option>
-                    <option value="lastYear">Last Year</option>
+                    <option value="Today">Hoje</option>
+                    <option value="lastWeek">Esta Semana</option>
+                    <option value="lastMonth">Este Mês</option>
+                    <option value="lastYear">Este Ano</option>
                 </select>
             </div>
 
@@ -71,34 +74,34 @@
             <div class="section notes">
 
                 <div class="cards">
-                    <div class="card" style="background-color: #9BB8CD;">
+                    <div class="card" style="background-color: #EF9595;">
                         <div class="cardLabel">Notas emitidas</div>
                         <div class="cardValue">179</div>
-                        <button class="cardButton">See all +</button>
+                        <button class="cardButton">ver tudo +</button>
                     </div>
 
-                    <div class="card" style="background-color: #82A0D8;">
+                    <div class="card" style="background-color: #FF8080;">
                         <div class="cardLabel">Sem cobrança</div>
                         <div class="cardValue">52</div>
-                        <button class="cardButton">See all +</button>
+                        <button class="cardButton">ver tudo +</button>
                     </div>
 
-                    <div class="card" style="background-color: #ADC4CE;">
+                    <div class="card" style="background-color: #FFD89C;">
                         <div class="cardLabel">Notas vencidas</div>
                         <div class="cardValue">25</div>
-                        <button class="cardButton">See all +</button>
+                        <button class="cardButton">ver tudo +</button>
                     </div>
 
-                    <div class="card" style="background-color: #8EACCD;">
+                    <div class="card" style="background-color: #E9B384;">
                         <div class="cardLabel">A vencer</div>
                         <div class="cardValue">37</div>
-                        <button class="cardButton">See all +</button>
+                        <button class="cardButton">ver tudo +</button>
                     </div>
 
-                    <div class="card" style="background-color: #82A0D8;">
+                    <div class="card" style="background-color: #F4B183;">
                         <div class="cardLabel">Notas pagas</div>
                         <div class="cardValue">75</div>
-                        <button class="cardButton">See all +</button>
+                        <button class="cardButton">ver tudo +</button>
                     </div>
                 </div>
             </div>
@@ -106,12 +109,12 @@
             <!--TITULO E FILTRO BÁSICO DA SESSÃO-->
 
             <div class="sectionHeader">
-                <div class="sectionLabel">Gráficos</div>
+                <div class="sectionLabel"><i class="material-icons">graphic_eq</i>Gráficos</div>
                 <select name="" id="timeFilter">
-                    <option value="Today">Today</option>
-                    <option value="lastWeek">Last Week</option>
-                    <option value="lastMonth">Last Month</option>
-                    <option value="lastYear">Last Year</option>
+                    <option value="Today">Hoje</option>
+                    <option value="lastWeek">Esta Semana</option>
+                    <option value="lastMonth">Este Mês</option>
+                    <option value="lastYear">Este Ano</option>
                 </select>
             </div>
 
@@ -119,32 +122,7 @@
 
             <div class="section graphs">
                 <div class="graph-container">
-                    <div class="graph-title">Evolution Graphic</div>
-                    <div class="graph-wrapper">
-                        <div class="item i1"></div>
-                        <div class="item i2"></div>
-                        <div class="item i3"></div>
-                        <div class="item i4"></div>
-                        <div class="item i5"></div>
-                        <div class="item i6"></div>
-                        <div class="item i7"></div>
-                        <div class="item i8"></div>
-                        <div class="item i9"></div>
-                        <div class="item i10"></div>
-                        <div class="bars">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="graph-container">
-                    <div class="graph-title">Evolution Graphic</div>
+                    <div class="graph-title">Gráfico de Evolução</div>
                     <div class="graph-wrapper">
                         <div class="item i1"></div>
                         <div class="item i2"></div>
@@ -212,7 +190,8 @@
                         <div><input type="radio" name="status" value="emitida"><label>Emitida</label></div>
                         <div><input type="radio" name="status" value="cobrança"><label>Cobrança realizada</label></div>
                         <div><input type="radio" name="status" value="atraso"><label>Pagamento em Atraso</label></div>
-                        <div><input type="radio" name="status" value="realizado"><label>Pagamento realizado</label></div>
+                        <div><input type="radio" name="status" value="realizado"><label>Pagamento realizado</label>
+                        </div>
                     </div>
                     <div class="formArea">
                         <label>Emissão da nota</label>
@@ -236,6 +215,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="graphs.js"></script>
 </body>
 
 </html>

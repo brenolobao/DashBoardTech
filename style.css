@@ -25,6 +25,7 @@
   overflow: hidden;
   box-sizing: border-box;
   user-select: none;
+  transition: .3s all;
 }
 
 body {
@@ -54,7 +55,8 @@ body {
   z-index: 3;
   box-shadow: 10px 0px 15px rgba(0, 0, 0, .1);
 }
-.sideMenu .logout{
+
+.sideMenu .logout {
   padding: 10px;
   border: none;
   background-color: white;
@@ -67,7 +69,8 @@ body {
   position: absolute;
   bottom: 10px;
 }
-.logout:hover{
+
+.logout:hover {
   transform: scale(1.05);
   color: #FF8787;
 }
@@ -99,7 +102,7 @@ body {
 }
 
 .wrapper-item:hover {
-  color: lightskyblue;
+  color: #F9B572;
   transform: scale(1.05);
 }
 
@@ -176,7 +179,7 @@ body {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background-color: lightskyblue;
+  background-color: #F9B572;
   color: black;
 }
 
@@ -197,7 +200,12 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: #cecece;
+  display: grid;
+  place-items: center;
+}
+.photo i{
+  font-size: 2.5em;
 }
 
 .name {
@@ -211,7 +219,7 @@ body {
 .closeMenu,
 .openMenu {
   border: none;
-  background-color: lightskyblue;
+  background-color: #F9B572;
   color: black;
   border-radius: 50%;
   padding: 10px;
@@ -284,7 +292,7 @@ body {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background-color: lightskyblue;
+  background-color: #F9B572;
   border: none;
   position: Absolute;
   left: 15px;
@@ -317,12 +325,15 @@ input[type=month] {
   padding: 10px;
   width: 100%;
   text-align: center;
-  background-color: lightskyblue;
+  background-color: #F9B572;
   font-size: 1em;
   border: none;
   border-radius: 25px;
   font-weight: bold;
   margin-top: 10px;
+}
+.formButton:hover{
+  background-color: lightblue;
 }
 
 .filter .formArea {
@@ -336,16 +347,19 @@ input[type=month] {
   gap: 10px;
   width: 100%;
 }
-.formArea label{
+
+.formArea label {
   width: 100%;
   padding: 5px 0px;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
-.filter #upload{
+
+.filter #upload {
   width: 100%;
 }
-.status input{
+
+.status input {
   margin-right: 5px;
 }
 
@@ -385,7 +399,7 @@ input[type=month] {
   font-family: Roboto;
   font-size: 1em;
   border-radius: 10px;
-  background-color: lightskyblue;
+  background-color: #F9B572;
   text-align: center;
 }
 
@@ -408,6 +422,13 @@ input[type=month] {
   color: black;
   margin-left: 30px;
   font-weight: 350;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.sectionLabel i{
+  font-size: 1em;
 }
 
 .card {
@@ -489,7 +510,7 @@ input[type=month] {
   align-items: flex-end;
   justify-content: center;
   font: normal 15pt arial;
-  color: rgba(225, 225, 225, .5);
+  color: white;
   padding-bottom: .5em;
 }
 
@@ -507,14 +528,14 @@ input[type=month] {
 .bar {
   height: 1px;
   width: 100%;
-  background-color: rgba(225, 225, 225, .1);
+  background-color: gray;
   counter-increment: section;
 
 }
 
 .bar:after {
   content: counter(section);
-  color: rgba(225, 225, 225, .3);
+  color: gray;
   margin-left: 0px;
   margin-top: 7px;
   display: block;
@@ -528,15 +549,17 @@ input[type=month] {
   .filter {
     width: 100%;
   }
-  .wrapper-item{
+
+  .wrapper-item {
     font-size: 1.5em;
   }
 
   #searchForm {
     width: 150px;
   }
-  .card{
-    height:200px ;
+
+  .card {
+    height: 200px;
   }
 
   .perfil {
@@ -549,9 +572,11 @@ input[type=month] {
 
   .graph-container {
     width: 100%;
+    height: 250px;
   }
 }
-.pagesContent{
+
+.pagesContent {
   width: 100%;
   height: 100%;
   display: flex;
@@ -560,14 +585,17 @@ input[type=month] {
   gap: 10px;
   flex-direction: column;
 }
-.pagesContent i{
+
+.pagesContent i {
   font-size: 7em;
   color: lightslategray;
 }
-.pagesContent h1{
+
+.pagesContent h1 {
   font-weight: 300;
 }
-.pagesContent a{
+
+.pagesContent a {
   text-decoration: none;
   color: rgb(65, 150, 202);
 }

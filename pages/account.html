@@ -19,11 +19,13 @@
             <button class="closeMenu" onclick="closeMenu()"><i class="material-icons">close</i></button>
             <nav class="wrapper">
                 <a href="../index.html" class="wrapper-item active"> <i class="material-icons">inbox</i>
-                    All Notes</a>
-                <a href="#account" class="wrapper-item"><i class="material-icons">account_circle</i>Account</a>
-                <a href="#settings" class="wrapper-item"><i class="material-icons">settings</i>Settings</a>
-                <a href="#about" class="wrapper-item"><i class="material-icons">info</i>About</a>
+                    Todas as Notas</a>
+                <a href="account.html" class="wrapper-item"><i class="material-icons">account_circle</i>Conta</a>
+                <a href="settings.html" class="wrapper-item"><i
+                        class="material-icons">settings</i>Configurações</a>
+                <a href="about.html" class="wrapper-item"><i class="material-icons">info</i>Sobre</a>
             </nav>
+            <button class="logout"><i class="material-icons">exit_to_app</i>Sair</button>
         </div>
 
         <!--MENU NAV BAR-->
@@ -35,24 +37,24 @@
             </button>
             <div class="searchBar">
                 <form id="searchForm">
-                    <input type="text" name="search" id="search" placeholder="search in all notes">
+                    <input type="text" name="search" id="search" placeholder="Pesquisar em todas as notas">
                 </form>
                 <button type="submit" form="searchForm"><i class="material-icons">search</i></button>
                 <button id="openForm" onclick="openFilter()"><i class="material-icons">tune</i></button>
             </div>
             <div class="perfil">
-                <div class="photo"></div>
+                <div class="photo"><i class="material-icons">person</i></div>
                 <div class="header">
-                    <div class="name">Name</div>
-                    <div class="function">Function</div>
+                    <div class="name">Nome</div>
+                    <div class="function">Cargo</div>
                 </div>
             </div>
         </nav>
         
         <div class="pagesContent">
             <i class="material-icons">error</i>
-            <h1>Nothing to see here yet</h1>
-            <a href="../index.html">Go back to main Page</a>
+            <h1>Nada pra ver aqui ainda</h1>
+            <a href="../index.html">Voltar para página principal</a>
         </div>
     </div>
     <script src="../script.js"></script>
